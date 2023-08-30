@@ -1,0 +1,97 @@
+body{
+    background-image: url('https://scx2.b-cdn.net/gfx/news/hires/2019/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anime{
+    animation-name: firlan;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.main{
+    width: 400px;
+    height: 400px;
+    /* background: red; */
+    float: left;
+    position: relative;
+    top:50px;
+    left: 150px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    animation-duration: 20s;
+}
+
+.uran , .saturn{
+    width: 50px;
+    height: 50px;
+    /* background: blue; */
+    float: left;
+    position: absolute;
+    
+    border-radius: 50%;
+
+    
+}
+
+.saturn{
+    top: 100px;
+    left: -10px;
+    background-image: url('https://pngimg.com/uploads/earth/small/earth_PNG10.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+   
+    animation-duration: 10s;
+    
+}
+
+.uran{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f5/3D_Mars.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    animation-duration: 5s;
+    top: -25px;
+}
+
+.second{
+    width: 200px;
+    height: 200px;
+    /* background: grey; */
+    border-radius: 50%;
+    float: left;
+    border:2px solid grey ;
+    animation-duration: 7s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sun{
+    width: 70px;
+    height: 70px;
+    /* background: blue; */
+    float: left;
+    position: absolute;
+    background-image: url('https://nineplanets.org/wp-content/uploads/2020/03/sun.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@keyframes firlan {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
